@@ -26,7 +26,7 @@ export default defineConfig(async () => {
             changeOrigin: true,
             rewrite: (path) => path.replace(/^\/api/, ''),
             // mock代理目标地址
-            target: 'http://localhost:8080',
+            target: 'http://127.0.0.1:18200', // smartpark local: backend jar
             ws: true,
           },
         },
